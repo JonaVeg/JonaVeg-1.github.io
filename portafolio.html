@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Mi Portafolio</title>
+</head>
+<body>
+
+<section id="portfolio" class="container mt-5">
+  <h2 class="text-center mb-4">Portafolio</h2>
+
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="IMG1.PNG" class="card-img-top" alt="Proyecto 1" data-toggle="modal" data-target="#modal1">
+        <div class="card-body">
+          <h5 class="card-title">Tablas de multiplicar</h5>
+          <p class="card-text">Descripción concisa del proyecto. Tipo de software y propósito.</p>
+          <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript, PHP</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="Pagina.PNG" class="card-img-top" alt="Proyecto 2" data-toggle="modal" data-target="#modal2">
+        <div class="card-body">
+          <h5 class="card-title">Otro Proyecto</h5>
+          <p class="card-text">Descripción concisa del proyecto. Tipo de software y propósito.</p>
+          <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript, PHP</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repite este bloque para cada proyecto -->
+
+  </div>
+</section>
+
+<!-- Modales para las imágenes -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="IMG1.PNG" class="img-fluid" alt="Proyecto 1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="Pagina.PNG" class="img-fluid" alt="Proyecto 2">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
