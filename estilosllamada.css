@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita que el desplazamiento horizontal aparezca cuando el icono flotante está presente */
+  }
+  
+  #phoneIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Asegura que esté por encima de todo el contenido */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #phoneIcon img {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  #phoneIcon:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra al pasar el ratón */
+  }
+  
