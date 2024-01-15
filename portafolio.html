@@ -10,6 +10,45 @@
 </head>
 <body>
 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-capitalize" href="index.html">JonaLogic</a>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61550661570441" class="social-icon"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new" class="social-icon"><i
+              class="bi bi-envelope"></i></a>
+          <a href="https://www.instagram.com/jonalogictech/" class="social-icon"><i
+              class="bi bi-instagram"></i></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="inicial.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca.html">Acerca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
 <section id="portfolio" class="container mt-5">
   <h2 class="text-center mb-4">Portafolio</h2>
 
@@ -19,7 +58,9 @@
         <img src="portafolio tablas.PNG" class="card-img-top" alt="Proyecto 1" data-toggle="modal" data-target="#modal1">
         <div class="card-body">
           <h5 class="card-title">Tablas de multiplicar</h5>
-          <p class="card-text">El proyecto es una página web interactiva que permite a los usuarios generar tablas de multiplicar de un número específico. El tipo de software es una aplicación web basada en HTML, CSS y JavaScript. El propósito de esta aplicación es brindar a los usuarios una manera sencilla y visual de generar y ver tablas de multiplicar de un número que pueden ingresar en un campo de entrada. 
+          <p class="card-text">El proyecto es una página web interactiva que permite a los usuarios generar tablas de multiplicar de un número específico. 
+            El tipo de software es una aplicación web basada en HTML, CSS y JavaScript. El propósito de esta aplicación es brindar a los usuarios una manera sencilla y visual de generar y ver tablas de 
+            multiplicar de un número que pueden ingresar en un campo de entrada. 
             <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
           <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Ver más</a>
         </div>
@@ -30,16 +71,34 @@
       <div class="card">
         <img src="Pagina.PNG" class="card-img-top" alt="Proyecto 2" data-toggle="modal" data-target="#modal2">
         <div class="card-body">
-          <h5 class="card-title">Pagina Panther Shop</h5>
-          <p class="card-text">Se trata de una tienda en línea que vende artículos deportivos. El tipo de software es una aplicación web construida utilizando HTML, CSS y JavaScript, junto con el framework Bootstrap para mejorar el diseño y la experiencia del usuario. El propósito de la aplicación es ofrecer a los usuarios una plataforma en la que puedan explorar y comprar productos relacionados con deportes, como playeras, shorts, calcetas, tenis, guantes, balones y más.</p>
+          <h5 class="card-title">Página Panther Shop</h5>
+          <p class="card-text">Se trata de una tienda en línea que vende artículos deportivos. 
+            El tipo de software es una aplicación web construida utilizando HTML, CSS y JavaScript, 
+            junto con el framework Bootstrap para mejorar el diseño y la experiencia del usuario. El propósito de la aplicación es ofrecer a los usuarios una 
+            plataforma en la que puedan explorar y comprar productos relacionados con deportes, como playeras, shorts, calcetas, tenis, guantes, balones y más.</p>
+            <p><a href="https://65a486221e60c1dea7297b3b--creative-biscuit-a0a6a0.netlify.app/">Visíta la Página completa</a></p>
           <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript </p>
           <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Ver más</a>
         </div>
       </div>
     </div>
 
-    <!-- Repite este bloque para cada proyecto -->
-
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="imagenes/Evrepa.png" class="card-img-top" alt="Proyecto 3" data-toggle="modal" data-target="#modal3">
+        <div class="card-body">
+          <h5 class="card-title">Página EVRepairs</h5>
+          <p class="card-text">EVRepairs se presenta como tu centro de confianza para la reparación de dispositivos móviles. 
+            El tipo de software es una aplicación web construida utilizando HTML, CSS y JavaScript, 
+            junto con el framework Bootstrap para mejorar el diseño y la experiencia del usuario. El propósito de la aplicación es ofrecer a los usuarios una 
+            plataforma en la que puedan explorar y destacar la sólida formación y experiencia técnica de su equipo de expertos, evidenciando un enfoque profesional y 
+            especializado en la reparación de dispositivos móviles.</p>
+            <p><a href="https://dashing-beignet-f26b23.netlify.app/">Visíta la Página completa</a></p>
+          <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript </p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Ver más</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -63,11 +122,106 @@
     </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="imagenes/Evrepa.png" class="img-fluid" alt="Proyecto 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Segunda seccion de portafolio-->
+<section id="portfolio" class="container mt-5">
+  <h2 class="text-center mb-4">--</h2>
+
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="imagenes/Jonathan Vega.jpg" class="card-img-top" alt="Proyecto 4" data-toggle="modal" data-target="#modal4">
+        <div class="card-body">
+          <h5 class="card-title">Tablas de multiplicar</h5>
+          <p class="card-text">El proyecto es una página web interactiva que permite a los usuarios generar tablas de multiplicar de un número específico. 
+            El tipo de software es una aplicación web basada en HTML, CSS y JavaScript. El propósito de esta aplicación es brindar a los usuarios una manera sencilla y visual de generar y ver tablas de 
+            multiplicar de un número que pueden ingresar en un campo de entrada. 
+            <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal4">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="imagenes/certif.jpg" class="card-img-top" alt="Proyecto 5" data-toggle="modal" data-target="#modal5">
+        <div class="card-body">
+          <h5 class="card-title">Certificado </h5>
+          <p class="card-text">Se trata de una tienda en línea que vende artículos deportivos. 
+            El tipo de software es una aplicación web construida utilizando HTML, CSS y JavaScript, 
+            junto con el framework Bootstrap para mejorar el diseño y la experiencia del usuario. El propósito de la aplicación es ofrecer a los usuarios una 
+            plataforma en la que puedan explorar y comprar productos relacionados con deportes, como playeras, shorts, calcetas, tenis, guantes, balones y más.</p>
+            <p><a href="https://65a486221e60c1dea7297b3b--creative-biscuit-a0a6a0.netlify.app/">Visíta la Página completa</a></p>
+          <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript </p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal5">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="imagenes/Evrepa.png" class="card-img-top" alt="Proyecto 6" data-toggle="modal" data-target="#modal6">
+        <div class="card-body">
+          <h5 class="card-title">Página EVRepairs</h5>
+          <p class="card-text">EVRepairs se presenta como tu centro de confianza para la reparación de dispositivos móviles. 
+            El tipo de software es una aplicación web construida utilizando HTML, CSS y JavaScript, 
+            junto con el framework Bootstrap para mejorar el diseño y la experiencia del usuario. El propósito de la aplicación es ofrecer a los usuarios una 
+            plataforma en la que puedan explorar y destacar la sólida formación y experiencia técnica de su equipo de expertos, evidenciando un enfoque profesional y 
+            especializado en la reparación de dispositivos móviles.</p>
+            <p><a href="https://dashing-beignet-f26b23.netlify.app/">Visíta la Página completa</a></p>
+          <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript </p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal6">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modales para las imágenes 2parte -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="imagenes/Jonathan Vega.jpg" class="img-fluid" alt="Proyecto 4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="imagenes/certif.jpg" class="img-fluid" alt="Proyecto 5">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="imagenes/Evrepa.png" class="img-fluid" alt="Proyecto 6">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <div id="phoneIcon" onclick="realizarLlamada()">
   <span>&#9742;</span>
 </div>
