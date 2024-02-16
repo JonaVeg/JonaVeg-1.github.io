@@ -1,0 +1,17 @@
+#phoneIcon2 {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    padding: 10px;
+    border-radius: 50%; /* Para hacer un círculo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  #phoneIcon2 img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+    border-radius: 50%; /* Para hacer un círculo */
+  }
+  
