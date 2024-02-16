@@ -6,7 +6,7 @@ function realizarLlamada() {
     var mensaje = encodeURIComponent('Hola, estoy interesado en cotizar. ¿Cómo puedo empezar?');
 
     // Construye la URL de WhatsApp con el número de teléfono y el mensaje predeterminado.
-    var urlWhatsApp = 'https://wa.me/' + numeroTelefono + '?text=' + mensaje;
+    var urlWhatsApp = 'https://wa.me/2225402887' + numeroTelefono + '?text=' + mensaje;
     window.location.href = urlWhatsApp;
     
     // Utiliza la API de marcación tel: para iniciar la llamada
