@@ -22,4 +22,11 @@ body {
   #phoneIcon:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra al pasar el ratón */
   }
+
+  #phoneIcon2 {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+    right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+    cursor: pointer;
+  }
   
