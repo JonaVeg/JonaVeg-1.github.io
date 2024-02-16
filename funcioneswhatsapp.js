@@ -1,11 +1,10 @@
-  function mandarMensaje() {
-    // Reemplaza 'Hola, estoy interesado en cotizar. ¿Cómo puedo empezar?' con tu mensaje predeterminado.
+function mandarMensaje() {
+    console.log('La función mandarMensaje() se está ejecutando correctamente.');
+  
+    // Resto del código...
+    var numeroTelefono = '522225402887';
     var mensaje = encodeURIComponent('Hola, estoy interesado en cotizar. ¿Cómo puedo empezar?');
-  
-    // Construye la URL de WhatsApp con el número de teléfono y el mensaje predeterminado.
-    var urlWhatsApp = 'https://wa.me/522225402887' + numeroTelefono + '?text=' + mensaje;
-  
-    // Redirige a la URL de WhatsApp.
+    var urlWhatsApp = 'https://wa.me/' + numeroTelefono + '?text=' + mensaje;
     window.location.href = urlWhatsApp;
   }
   
