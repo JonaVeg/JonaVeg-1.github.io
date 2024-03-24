@@ -5,129 +5,45 @@
   <title>JonaLogic</title>
   <link rel="icon" href="imagenes/loga.ico" type="image/x-icon">
   <!-- Required meta tags -->
-  <meta charset="utf-8">
   <meta name="google-site-verification" content="WCIaxnkbGDUqo5LA8n0ifDrh7yK4bH3MRCZCr8XmOiE" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-  <!-- Bootstrap Icons v1.5.0 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="estilosllamada.css">
+  <link rel="stylesheet" href="estiloswhatsapp.css">
+    
 
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      
-    }
-    header {
+    /* Estilos personalizados */
+
+    /* Estilos para la barra de navegación */
+    .navbar {
       background-color: #343a40;
-      color: white;
-      padding: 10px 0;
     }
+
     .navbar-brand {
+      color: #f8f9fa;
       font-size: 1.5rem;
       font-weight: bold;
     }
+
     .navbar-nav .nav-link {
+      color: #f8f9fa;
       font-size: 1.1rem;
+      transition: color 0.3s;
     }
-    .contact-section {
-      background-color: #f8f9fa;
-      padding: 50px 0;
-    }
-    .display-4 {
-      font-size: 2.5rem;
-    }
-    .btn-block {
-      display: block;
-      width: 100%;
-    }
-    .social-icons {
-      margin-top: 20px;
-    }
-    .social-icon {
-      font-size: 2rem;
-      margin: 0 10px;
+
+    .navbar-nav .nav-link:hover {
       color: #17a2b8;
     }
-    .bg-light {
-      background-color: #f8f9fa;
-    }
-    h2 {
-      margin-bottom: 20px;
-    }
-    h4 {
-      margin-bottom: 10px;
-    }
-    ul.list-unstyled {
-      margin: 0;
-      padding: 0;
-    }
-    ul.list-unstyled li {
-      margin-bottom: 5px;
-    }
-    #testimonios {
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 5px;
-    }
 
-    #testimonios h2 {
-      text-align: center;
-    }
 
-    #formulario-testimonio {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      color: #666;
-    }
-
-    input[type="text"],
-    textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-
-    button[type="submit"] {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #555;
-    }
-
-    #testimonios-lista {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .testimonio {
-      margin-bottom: 20px;
-      padding: 15px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-    }
   </style>
+
 </head>
 
 <body>
@@ -163,15 +79,14 @@
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  
-
-  <main>
-  </main>
 
   <section class="contact-section">
     <div class="container">
@@ -210,6 +125,9 @@
       
   <div id="phoneIcon" onclick="realizarLlamada()">
     <img src="imagenes/telefonica.png" alt="Llamada">
+  </div>
+  <div id="phoneIcon2" onclick="mandarMensaje()">
+    <img src="imagenes/whatss.png" alt="Llamada">
   </div>
 
 
@@ -271,65 +189,66 @@
           </form>
         </div>-->
   
-
+<br><br>
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-md-8">
-              <div class="embed-responsive embed-responsive-16by9">
+              <div class="embed-responsive embed-responsive-16by9" style="height: 600px;"> <!-- Establece la altura deseada aquí -->
                 <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfVHN96mQxglvdeUQ7Yyh_SEi906DuTTMn9iTg80yjCBDCZZg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%">Cargando…</iframe>
               </div>
             </div>
           </div>
         </div>
         
-        <br>
-  <div class="text-center mt-4">
-    <a class="btn btn-primary" href="inicial.html" role="button">Regresar</a>
-  </div>
+
 <br>
 <br>
 <br>
 <br>
 
+<!-- Información de Contacto -->
 <section class="bg-light py-5">
-  <div class="container text-center">
-    <h2>Información de Contacto</h2>
-    <p>Ponte en contacto con nosotros para discutir tu proyecto o cualquier consulta que tengas.</p>
-    <ul class="list-unstyled">
-      <li><i class="bi bi-envelope"></i> Correo Electrónico: <a href="mailto:jonalogictech@gmail.com">jonalogictech@gmail.com</a></li>
-      <li><i class="bi bi-phone"></i> Teléfono: +52 2225402887</li>
-      <li><i class="bi bi-whatsapp"></i> WhatsApp: <a href="https://wa.me/522225402887" target="_blank">Enviar mensaje</a></li>
-    </ul>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=61550661570441" class="social-icon"><i class="bi bi-facebook"></i></a>
-      <a href="mailto:jonalogictech@gmail.com" class="social-icon"><i class="bi bi-envelope"></i></a>
-      <a href="https://www.instagram.com/jonalogictech/" class="social-icon"><i class="bi bi-instagram"></i></a>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Información de Contacto</h2>
+        <p>Ponte en contacto con nosotros para discutir tu proyecto o cualquier consulta que tengas.</p>
+        <ul class="list-unstyled text-left">
+          <li><i class="bi bi-envelope"></i> Correo Electrónico: <a href="mailto:jonalogictech@gmail.com">jonalogictech@gmail.com</a></li>
+          <li><i class="bi bi-phone"></i> Teléfono: +52 2225402887</li>
+          <li><i class="bi bi-whatsapp"></i> WhatsApp: <a href="https://wa.me/522225402887" target="_blank">Enviar mensaje</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61550661570441" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="mailto:jonalogictech@gmail.com" class="social-icon"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.instagram.com/jonalogictech/" class="social-icon"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-  <footer class="bg-dark text-white text-center py-3">
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
     <p>&copy; <span id="currentYear"></span> JonaLogic. Todos los derechos reservados.</p>
-  </footer>
-  
-  <script>
-    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-  </script>
+  </div>
+</footer>
+<script>
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
 
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
 
-  
-<script src="funcionadidad.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+
 <script src="funcionestelefono.js"></script> <!-- Funcionalidad del telefono -->
-
-
+<script src="funcioneswhatsapp.js"></script> <!-- Funcionalidad del telefono -->
 
 </body>
+
 </html>

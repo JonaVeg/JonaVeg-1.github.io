@@ -103,58 +103,49 @@
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   
-  <!-- Descripción Detallada de Servicios -->
-  <section class="container my-5">
-    <h2 class="text-center">Nuestros Servicios en Detalle</h2>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h3 class="card-title text-center">Diseño Web Personalizado</h3>
-            <p class="card-text text-center">Creamos diseños web personalizados que representan la esencia de tu marca.</p>
-            <ul>
-              <li>Entrevista inicial para entender tus metas</li>
-              <li>Propuestas de diseño iterativas</li>
-              <li>Revisiones y ajustes basados en tus comentarios</li>
-              <li>Entrega de archivos de diseño listos para desarrollo</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h3 class="card-title text-center">Desarrollo de Sitios Web Responsivos</h3>
-            <p class="card-text text-center">Creamos sitios web que se adaptan perfectamente a diferentes dispositivos.</p>
-            <ul>
-              <li>Construimos sitios web que se ajustan de manera fluida y elegante a una variedad de dispositivos, asegurando una experiencia excepcional sin importar la pantalla que utilice.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h3 class="card-title text-center">Estrategia de Experiencia de Usuario (UX)</h3>
-            <p class="card-text text-center">Nos enfocamos en comprender las necesidades y expectativas de tus usuarios para
-              diseñar una experiencia fluida y atractiva en tu sitio web...</p>
-            <ul>
-              <li> Implementamos estrategias centradas en la Experiencia de Usuario (UX), asegurando que cada interacción en nuestro sitio web sea intuitiva, atractiva y satisfactoria para quienes lo visitan</li>
-            </ul>
-          </div>
+<!-- Descripción Detallada de Servicios -->
+<section class="container text-center my-5"> <!-- Agregada la clase 'text-center' para centrar el contenido -->
+  <h2>Nuestros Servicios en Detalle</h2>
+  <br>
+  <br>
+  <div class="row justify-content-center"> <!-- Añadida la clase 'justify-content-center' para centrar horizontalmente los elementos -->
+    <div class="col-md-5">
+      <div class="card mb-5">
+        <div class="card-body">
+          <h3 class="card-title">Diseño Web Personalizado</h3>
+          <p class="card-text">Creamos diseños web personalizados que representan la esencia de tu marca.</p>
+          <ul class="text-left"> <!-- Añadida la clase 'text-left' para alinear el texto a la izquierda -->
+            <li>Entrevista inicial para entender tus metas</li>
+            <li>Propuestas de diseño iterativas</li>
+            <li>Revisiones y ajustes basados en tus comentarios</li>
+            <li>Entrega de archivos de diseño listos para desarrollo</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+    <div class="col-md-5">
+      <div class="card mb-5">
+        <div class="card-body">
+          <h3 class="card-title">Desarrollo de Sitios Web Responsivos</h3>
+          <p class="card-text">Creamos sitios web que se adaptan perfectamente a diferentes dispositivos.</p>
+          <ul class="text-left"> <!-- Añadida la clase 'text-left' para alinear el texto a la izquierda -->
+            <li>Construimos sitios web que se ajustan de manera fluida y elegante a una variedad de dispositivos, asegurando una experiencia excepcional sin importar la pantalla que utilice.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Planes y Precios -->
   <section class="bg-light py-5" style="font-family: 'Arial', sans-serif;">
@@ -273,13 +264,34 @@
           </div>
         </div>
       </div>-->
+<br>
+
+        <!-- Información de Contacto -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Información de Contacto</h2>
+      <p>Ponte en contacto con nosotros para discutir tu proyecto o cualquier consulta que tengas.</p>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-envelope"></i> Correo Electrónico: <a href="mailto:jonalogictech@gmail.com">jonalogictech@gmail.com</a></li>
+        <li><i class="bi bi-phone"></i> Teléfono: +52 2225402887</li>
+        <li><i class="bi bi-whatsapp"></i> WhatsApp: <a href="https://wa.me/522225402887" target="_blank">Enviar mensaje</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61550661570441" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="mailto:jonalogictech@gmail.com" class="social-icon"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.instagram.com/jonalogictech/" class="social-icon"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </section>
 
 
-  
-
-  <footer>
-    <!-- place footer here -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; <span id="currentYear"></span> JonaLogic. Todos los derechos reservados.</p>
   </footer>
+  <script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+  </script>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
