@@ -1,0 +1,44 @@
+
+    /* Estilos para la sección CTA */
+    .cta-section {
+        background-color: #17a2b8;
+        color: #f8f9fa;
+      }
+  
+      .cta-section h2 {
+        font-size: 2.5rem;
+      }
+  
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+  
+      /* Estilos para las tarjetas de servicios */
+      .service-card {
+        border: none;
+        transition: transform 0.3s;
+      }
+  
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+      /*
+      .welcome-box {
+        color: #343a40;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+      } Estilos para las tarjetas de servicios */
+  
+      /* Estilos para el carrusel */
+  .carousel-item {
+    background-color: #3498db; /* Cambiar el color de fondo para todos los carruseles */
+    text-align: center; /* Centrar el texto horizontalmente */
+  }
+  
+  .carousel-item h4 {
+    padding: 20px; /* Espaciado interno para el texto */
+    color: #fff; /* Cambiar el color del texto */
+  }  
+  
