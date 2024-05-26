@@ -172,12 +172,12 @@
       var message = document.getElementById('mensaje').value;
 
       db.collection("contacts").add({
-          name: name,
+          name: nombre,
           email: email,
-          subject: subject,
-          phone: phone,
+          subject: asunto,
+          phone: telefono,
           howDidYouHear: howDidYouHear,
-          message: message,
+          message: mensaje,
           timestamp: firebase.firestore.FieldValue.serverTimestamp()
       })
       .then(function () {
