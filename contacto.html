@@ -11,6 +11,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <link rel="stylesheet" href="estilosllamada.css">
   <link rel="stylesheet" href="estiloswhatsapp.css">
     
@@ -109,87 +110,13 @@
   </div>
 
 
-      
-      <!--<div class="row">
-        <div class="col-md-6">
-          <div id="formulario-testimonio">
-            <form id="formulario-testimonio">
-              
-              <div class="mb-3">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" class="form-control" required>
-              </div>
-              <div class="mb-3">
-                <label for="testimonio">Mensaje:</label>
-                <textarea id="testimonio" name="testimonio" rows="4" placeholder="Ingresar texto" class="form-control" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-          </div>
-        </div>
-      
-        <div class="col-md-6">
-          <h4>Información de contacto</h4>
-          <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-envelope"></i> jonalogictech@gmail.com</li>
-            <li><i class="bi bi-phone"></i> 2218951103</li>
-            <li><i class="bi bi-geo-alt"></i> Dirección, Ciudad</li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
-
-    <!--<div class="container">  Aquí se mostrarán los testimonios enviados por los fans
-      <div class="row">
-        <div class="col-md-9">
-          <div id="testimonios-lista">
-         
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>-->
-  
-
-  <!-- <div class="col-md-6">
-          <form action="contactos.php" method="post">
-            <div class="mb-3">
-              <label for="txtNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="txtNombre" name="txtNombre" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="txtCorreo" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="txtCorreo" name="txtCorreo" required>
-            </div>
-            <button type="#" class="btn btn-primary btn-lg btn-block">Enviar</button>
-          </form>
-        </div>-->
-  
-<br><br>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="embed-responsive embed-responsive-16by9" style="height: 600px;"> <!-- Establece la altura deseada aquí -->
-                <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSfVHN96mQxglvdeUQ7Yyh_SEi906DuTTMn9iTg80yjCBDCZZg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%">Cargando…</iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-<br>
-<br>
-<br>
-<br>
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br>
 <div class="container my-5">
   <h1 class="mb-4">Contáctanos</h1>
   <form id="contactForm">
       <div class="form-group">
           <label for="name">Nombre</label>
-          <input type="text" class="form-control" id="name" required>
+          <input type="text" class="form-control" id="nombre" required>
       </div>
       <div class="form-group">
           <label for="email">Correo Electrónico</label>
@@ -197,11 +124,11 @@
       </div>
       <div class="form-group">
           <label for="subject">Asunto</label>
-          <input type="text" class="form-control" id="subject" required>
+          <input type="text" class="form-control" id="asunto" required>
       </div>
       <div class="form-group">
           <label for="phone">Número de teléfono (opcional)</label>
-          <input type="tel" class="form-control" id="phone">
+          <input type="tel" class="form-control" id="telefono">
       </div>
       <div class="form-group">
           <label for="howDidYouHear">¿Cómo se enteró de nosotros?</label>
@@ -209,8 +136,9 @@
       </div>
       <div class="form-group">
           <label for="message">Mensaje</label>
-          <textarea class="form-control" id="message" rows="3" required></textarea>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
       </div>
+      <br>
       <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
   <div id="successMessage" class="alert alert-success mt-3" style="display:none;">
@@ -236,12 +164,12 @@
   document.getElementById('contactForm').addEventListener('submit', function (event) {
       event.preventDefault();
 
-      var name = document.getElementById('name').value;
+      var name = document.getElementById('nombre').value;
       var email = document.getElementById('email').value;
-      var subject = document.getElementById('subject').value;
-      var phone = document.getElementById('phone').value;
+      var subject = document.getElementById('asunto').value;
+      var phone = document.getElementById('telefono').value;
       var howDidYouHear = document.getElementById('howDidYouHear').value;
-      var message = document.getElementById('message').value;
+      var message = document.getElementById('mensaje').value;
 
       db.collection("contacts").add({
           name: name,
@@ -295,9 +223,6 @@
 </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
