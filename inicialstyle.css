@@ -42,3 +42,11 @@
     color: #fff; /* Cambiar el color del texto */
   }  
   
+/* Subrayado a terminos y condiciones */
+
+  .no-underline {
+    text-decoration: none;
+}
+.no-underline:hover {
+    text-decoration: underline;
+}

@@ -1,21 +1,11 @@
-.navbar-logo {
-    max-width: 100px;
-    height: auto;
-  }
-  
-  /* Estilo para el texto Cinzel y centrado */
-  .cinzel-text {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    /* Tamaño de texto responsivo con Bootstrap */
-    font-size: 5rem; /* Tamaño inicial */
-  }
-  
-  @media (max-width: 768px) {
-    /* Estilo para tamaño de texto responsivo en dispositivos medianos y pequeños */
-    .cinzel-text {
-        font-size: 2rem; /* Reducir el tamaño para pantallas más pequeñas */
-    }
-}
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .center-img {
+            display: flex;
+            justify-content: center;
+        }
