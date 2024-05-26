@@ -17,6 +17,12 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+
+    <!-- Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
 </head>
 
 <body>
@@ -177,7 +183,87 @@
 <br>
 <br>
 <br>
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container my-5">
+  <h1 class="mb-4">Contáctanos</h1>
+  <form id="contactForm">
+      <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+          <label for="subject">Asunto</label>
+          <input type="text" class="form-control" id="subject" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Número de teléfono (opcional)</label>
+          <input type="tel" class="form-control" id="phone">
+      </div>
+      <div class="form-group">
+          <label for="howDidYouHear">¿Cómo se enteró de nosotros?</label>
+          <input type="text" class="form-control" id="howDidYouHear" required>
+      </div>
+      <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  <div id="successMessage" class="alert alert-success mt-3" style="display:none;">
+      Tu mensaje ha sido enviado con éxito.
+  </div>
+</div>
 
+<script>
+  // Configura tu proyecto Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyCaGaqkFjt11rjCZ2tscCy3YimzJV_gido",
+    authDomain: "jonalogic-c8ecf.firebaseapp.com",
+    projectId: "jonalogic-c8ecf",
+    storageBucket: "jonalogic-c8ecf.appspot.com",
+    messagingSenderId: "67802613164",
+    appId: "1:67802613164:web:37579fb27c06b11dde6609"
+  };
+  // Inicializa Firebase
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+
+  // Manejar el envío del formulario
+  document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('subject').value;
+      var phone = document.getElementById('phone').value;
+      var howDidYouHear = document.getElementById('howDidYouHear').value;
+      var message = document.getElementById('message').value;
+
+      db.collection("contacts").add({
+          name: name,
+          email: email,
+          subject: subject,
+          phone: phone,
+          howDidYouHear: howDidYouHear,
+          message: message,
+          timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      })
+      .then(function () {
+          document.getElementById('successMessage').style.display = 'block';
+          document.getElementById('contactForm').reset();
+      })
+      .catch(function (error) {
+          console.error("Error al enviar el mensaje: ", error);
+      });
+  });
+</script>
+
+
+<br><br><br><br><br><br><br><br><br><br>
 
 <footer class="bg-dark text-white text-center py-3">
   <!-- Información de Contacto -->
