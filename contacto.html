@@ -127,13 +127,20 @@
           <input type="text" class="form-control" id="asunto" required>
       </div>
       <div class="form-group">
-          <label for="phone">Número de teléfono (opcional)</label>
-          <input type="tel" class="form-control" id="telefono">
+          <label for="phone">Número de teléfono</label>
+          <input type="number" class="form-control" id="telefono">
       </div>
       <div class="form-group">
-          <label for="howDidYouHear">¿Cómo se enteró de nosotros?</label>
-          <input type="text" class="form-control" id="howDidYouHear" required>
-      </div>
+        <label for="howDidYouHear">¿Cómo se enteró de nosotros?</label>
+        <select class="form-control" id="howDidYouHear" required>
+            <option value="">Seleccione una opción</option>
+            <option value="internet">Internet</option>
+            <option value="amigo">Recomendación de un amigo</option>
+            <option value="publicidad">Publicidad</option>
+            <option value="redessociales">Redes sociales</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
       <div class="form-group">
           <label for="message">Mensaje</label>
           <textarea class="form-control" id="mensaje" rows="3" required></textarea>
@@ -172,12 +179,12 @@
       var message = document.getElementById('mensaje').value;
 
       db.collection("contacts").add({
-          name: nombre,
+          name: name,
           email: email,
-          subject: asunto,
-          phone: telefono,
+          subject: subject,
+          phone: phone,
           howDidYouHear: howDidYouHear,
-          message: mensaje,
+          message: message,
           timestamp: firebase.firestore.FieldValue.serverTimestamp()
       })
       .then(function () {
