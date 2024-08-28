@@ -247,25 +247,57 @@ integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6
      crossorigin="anonymous"></script>
 
 
-<script src="Firebase.js"></script>
+
 <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  importScripts('https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js');
+  importScripts('https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging.js');
+  
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCaGaqkFjt11rjCZ2tscCy3YimzJV_gido",
+  authDomain: "jonalogic-c8ecf.firebaseapp.com",
+  projectId: "jonalogic-c8ecf",
+  storageBucket: "jonalogic-c8ecf.appspot.com",
+  messagingSenderId: "67802613164",
+  appId: "1:67802613164:web:37579fb27c06b11dde6609"
+};
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCaGaqkFjt11rjCZ2tscCy3YimzJV_gido",
-    authDomain: "jonalogic-c8ecf.firebaseapp.com",
-    projectId: "jonalogic-c8ecf",
-    storageBucket: "jonalogic-c8ecf.appspot.com",
-    messagingSenderId: "67802613164",
-    appId: "1:67802613164:web:37579fb27c06b11dde6609"
-  };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+// Request permission to send notifications and get the token
+async function requestPermission() {
+  try {
+    const currentToken = await getToken(messaging, {
+      vapidKey: "BAUmoL2l5lUV_HQdtk8JNN9bArmDQJCIjKsMfBUTc244gpxoZqhBYJpCvG4rmC_PBiKJ-chkMtgid_z-9yWhZuM"
+    });
+    if (currentToken) {
+      console.log('Current token:', currentToken);
+      // Send this token to your server and save it for future notifications
+    } else {
+      console.log('No registration token available. Request permission to generate one.');
+    }
+  } catch (error) {
+    console.error('An error occurred while retrieving token. ', error);
+  }
+}
+
+requestPermission();
+
+// Listen for messages
+onMessage(messaging, (payload) => {
+  console.log('Message received. ', payload);
+  const messagesElement = document.querySelector('.message');
+  const dataHeaderElement = document.createElement('h5');
+  const dataElement = document.createElement('pre');
+  dataElement.style = "overflow-x: hidden;";
+  dataHeaderElement.textContent = "Message Received:";
+  dataElement.textContent = JSON.stringify(payload, null, 2);
+  messagesElement.appendChild(dataHeaderElement);
+  messagesElement.appendChild(dataElement);
+});
+
 </script>
 
 </body>
