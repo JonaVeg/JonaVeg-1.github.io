@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Datos - Jona Logic APIS</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --container-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --accent-color: #e53e3e; /* Rojo suave para indicar eliminación/acciones críticas */
+            --link-color: #3182ce;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 5px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 12px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        p, ol, ul {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .step-number {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .alert-box {
+            background-color: #fff5f5;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.95rem;
+            color: #9b2c2c;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+        
+        .btn-home:hover {
+            background-color: #1a252f;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #a0aec0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Instrucciones para la Eliminación de Datos</h1>
+    <div class="subtitle">Cumplimiento de las normas de Meta para <strong>Jona Logic APIS</strong></div>
+
+    <p>En <strong>Jona Logic APIS</strong>, valoramos tu privacidad y te otorgamos el control total sobre los datos que compartes con nosotros. De acuerdo con las políticas de Meta (Facebook) sobre aplicaciones y sitios web, proporcionamos esta página para que puedas solicitar de forma transparente y sencilla la eliminación de tu información de nuestros sistemas.</p>
+
+    <div class="alert-box">
+        <strong>Importante:</strong> Al eliminar tus datos, perderás el acceso a las funciones personalizadas de nuestra aplicación asociadas a tu cuenta de Facebook y esta acción no se puede deshacer.
+    </div>
+
+    <h2>Pasos para revocar el acceso y eliminar tus datos a través de Facebook</h2>
+    <p>Si utilizaste el inicio de sesión de Facebook en nuestra aplicación, puedes eliminar las actividades de tu app siguiendo estas instrucciones oficiales:</p>
+    
+    <ol>
+        <li>Ve a la configuración de tu perfil de Facebook en el siguiente enlace: <a href="https://www.facebook.com/settings?tab=applications" target="_blank">Configuración de Apps y sitios web</a>. (O navega de forma manual desde tu perfil a: <strong>Configuración y privacidad &gt; Configuración &gt; Apps y sitios web</strong>).</li>
+        <li>Busca y localiza la aplicación llamada <strong style="color: #2b6cb0;">Jona Logic APIS</strong> en la lista de aplicaciones activas.</li>
+        <li>Haz clic en el botón <strong>Eliminar</strong> situado junto al nombre de la aplicación.</li>
+        <li>Se abrirá una ventana emergente. Marca la casilla que te permite eliminar también el historial de publicaciones o interacciones (si aplica) y confirma haciendo clic de nuevo en <strong>Eliminar</strong>.</li>
+        <li>¡Listo! Facebook notificará a nuestro sistema y se revocará inmediatamente el acceso.</li>
+    </ol>
+
+    <h2>Solicitud de eliminación manual (Base de datos interna)</h2>
+    <p>Si deseas asegurarte de que cualquier registro residual o información de perfil almacenada en nuestros servidores sea completamente borrada de forma manual, sigue este paso:</p>
+    
+    <ul>
+        <li>Envía un mensaje de correo electrónico a nuestro administrador a la dirección: <a href="mailto:jonathanvegagomez21@gmail.com"><strong>jonathanvegagomez21@gmail.com</strong></a>.</li>
+        <li>Coloca como asunto del mensaje: <strong>"Solicitud de Eliminación de Datos - Jona Logic APIS"</strong>.</li>
+        <li>En el cuerpo del mensaje, indícanos tu nombre completo o el ID de usuario con el que te registraste. Procesaremos la solicitud y eliminaremos de forma definitiva tus datos de nuestra base de datos en un plazo no mayor a **72 horas**.</li>
+    </ul>
+
+    <p style="text-align: center;">
+        <a href="https://jonalogic.netlify.app/inicial" class="btn-home">Volver al Inicio</a>
+    </p>
+
+    <footer>
+        &copy; 2026 Jona Logic APIS. Documento optimizado para auditorías de Meta for Developers.
+    </footer>
+</div>
+
+</body>
+</html>
